@@ -1,0 +1,150 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.mainBbox {
+  width: 1200px;
+  height: 1650px;
+  background-color: #fef4b0; }
+
+  .bbImg {
+    width: 1200px;
+    height: 1650px;
+    background-image: url("../image/background_transparent.png");
+    background-position: 50% 100%;
+    background-size: initial;
+    background-repeat: no-repeat;
+  }
+  .op {
+    width:1200px;
+    height:1650px;
+    background-color: white;
+    position: absolute;
+    opacity: 0.5;
+  }
+
+.bigBox {
+  width: 1050px;
+  height: 1550px;
+  background-color: #fbf6b1;
+  border-radius: 10px;
+  position: relative;
+  top: 50px;
+  left: 75px; }
+
+.conBox1 {
+  width: 1000px;
+  height: 250px;
+  position: relative;
+  top: -1450px;
+  left: 150px; }
+
+.conBox2 {
+  width: 1000px;
+  height: 250px;
+  position: relative;
+  top: -1400px;
+  left: 150px; }
+
+.conBox3 {
+  width: 1000px;
+  height: 250px;
+  position: relative;
+  top: -1350px;
+  left: 150px; }
+
+.conBox4 {
+  width: 1000px;
+  height: 250px;
+  position: relative;
+  top: -1300px;
+  left: 150px; }
+
+.conBox5 {
+  width: 1000px;
+  height: 250px;
+  position: relative;
+  top: -1250px;
+  left: 150px; }
+
+.iBox1 {
+  width: 300px;
+  height: 250px;
+  border: 1px;
+  border-radius: 8% 0px 0px 8%; }
+
+.iBox2 {
+  width: 300px;
+  height: 250px;
+  border: 1px;
+  border-radius: 8% 0px 0px 8%; }
+
+.iBox3 {
+  width: 300px;
+  height: 250px;
+  border: 1px;
+  border-radius: 8% 0px 0px 8%; }
+
+.iBox4 {
+  width: 300px;
+  height: 250px;
+  border: 1px;
+  border-radius: 8% 0px 0px 8%; }
+
+.iBox5 {
+  width: 300px;
+  height: 250px;
+  border: 1px;
+  border-radius: 8% 0px 0px 8%; }
+
+.btBox {
+  width: 600px;
+  height: 250px;
+  background-color: white;
+  border-radius: 0px 5% 5% 0px;
+  display: inline-block;
+  position: relative;
+  top: -57px;
+  left: -5px; }
+
+.mainT {
+  width: 600px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+  margin-top: 15px;
+  margin-left: 20px; 
+  color:#333333;
+}
+
+.subT {
+  width: 500px;
+  height: 35px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+  color:#333333; }
+
+.tB {
+  width: 500px;
+  height: 15px;
+  position: relative;
+  margin-top: 35px;
+  margin-left: 20px;
+  left: 15px; 
+  color:#333333;}
+
+.lcBox {
+  width: 70px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #1b9cfc;
+  float: left;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  margin-top: 32px;
+  margin-left: 20px; }

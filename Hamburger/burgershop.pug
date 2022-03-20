@@ -1,0 +1,85 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset ="utf-8")
+        link(href="./burgershop.css" rel="stylesheet")
+        title ANNA's BURGER SHOP
+    body
+        section.header_sec
+            .logo_sec
+            .burger_logo ANNA's BURGER SHOP 
+        .clear
+        section.print_all
+            section.click_burger 
+                section.receipt_area 
+                    .choose_burger RECEIPT 
+                    hr
+                    section.each_burger 
+                section.total_burger
+                    #view_money.view_money 총 결제금액
+                    .total_view 
+                        .money_wrap 받은 금액
+                            #money_area.money_area 
+                        .print_wrap 가격
+                            #print_area.print_area 
+                        .return_wrap 돌려줄 금액
+                            #return_area.return_area 
+                section.return_exchange 
+                    article 
+                        .view_exchange 거스름돈
+                        #input_exchange.input_exchange
+            section.click_money 
+                section.click_wrap 
+                    .select_money 금액 선택
+                    #fmill_won.fmill_won.won_money ₩50,000
+                    #mill_won.mill_won.won_money ₩10,000
+                    #fthou_won.fthou_won.won_money ₩5,000
+                    #thou_won.thou_won.won_money ₩1,000
+                    #fbaek_won.fbaek_won.won_money ₩500
+                    #baek_won.baek_won.won_money ₩100
+                    #ften_won.ften_won.won_money ₩50
+                    #ten_won.ten_won.won_money ₩10
+                section.other_buttons 
+                    #return_button.return_button 반환
+                    #reset_button.reset_button 리셋
+        section.burger_menu 
+            section.menu_one 
+                figure 
+                    #anna_burger.anna_burger.bg_choi 
+                    figcaption ANNA BURGER 8,900원
+                figure
+                    #chicken_burger.chicken_burger.bg_choi 
+                    figcaption CHICKEN BURGER 9,930원
+                figure
+                    #mag_burger.mag_burger.bg_choi 
+                    figcaption MEGA BURGER 10,270원
+                figure
+                    #double_burger.double_burger.bg_choi 
+                    figcaption DOUBLE MEAT 12,320원
+            section.menu_two 
+                figure
+                    #potato_burger.potato_burger.bg_choi 
+                    figcaption POTATO BURGER 8,980원
+                figure
+                    #vegan_burger.vegan_burger.bg_choi 
+                    figcaption VEGAN BURGER 10,460원
+                figure
+                    #tomato_burger.tomato_burger.bg_choi 
+                    figcaption TOMATO BURGER 13,260원
+                figure
+                    #triple_burger.triple_burger.bg_choi 
+                    figcaption TRIPLE BURGER 17,690원
+            section.menu_three
+                figure
+                    #chicken_nuggets.chicken_nuggets.bg_choi 
+                    figcaption CHICKEN NUGGETS 10,260원
+                figure
+                    #french_fries.french_fries.bg_choi 
+                    figcaption FRENCH FRIES 5,920원
+                figure
+                    #vanilla_shake.vanilla_shake.bg_choi 
+                    figcaption VANILLA SHAKE 3,610원
+                figure
+                    #hamburger_coke.hamburger_coke.bg_choi 
+                    figcaption DRINK COCA COLA 1,500원
+        .clear

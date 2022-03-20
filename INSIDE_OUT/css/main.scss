@@ -1,0 +1,492 @@
+@charset "utf-8";
+
+$b1: #683C71;
+$b2: #331C54;
+$fear : #AC80B8;
+$sadness: #AEDBE8;
+$joy : #FAE5A4;
+$disgust: #87C35D;
+$upset: #D21F27;
+$white : #F6F5F0;
+$hangel: 'Noto Sans KR', sans-serif;
+$engfont : 'Bree Serif', serif;
+
+@mixin common_cha{
+    display: inline-block;
+    float:left;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@mixin film_form{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20vw;
+    height: 38vh;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: $hangel;
+    cursor: default;
+}
+//첫번쨰 페이지
+.first_page{
+    position:relative;
+    z-index: 3000;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../image/background/background.png");   
+    .letter_sec{
+        width: 100vw;
+        height: 12vw;
+        position: relative;
+        div{
+            color: rgb(255, 251, 251);
+            display: inline-block;
+            float:left;
+            font-size: 8vw;
+            margin-left: 33vw;
+            margin-top: 3vw;
+            font-family: $engfont;
+        }
+        .first_letter{
+            font-size: 11vw;
+            position: absolute;
+            margin-top: -12vw;
+            left: -3.5%;
+        }
+        .last_letter{
+            margin-left: 0vw;
+            margin-top: 3vw;
+        }
+    }
+}
+.real_background{
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    z-index: 2000;
+    top: 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../image/background/night_sky.jpg");
+    animation: move_small 40s infinite;
+    -webkit-animation: move_small 40s infinite;
+    @keyframes move_small{
+        0%{left: 0%}
+        50%{left: 20%}
+        100%{left: 0%}
+    }
+}
+.first_page{
+    // position:relative;
+    // z-index: 3000;
+    // width: 100vw;
+    // height: 100vh;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-image: url("../image/background/background.png");   
+    .character_out{
+        position: relative;
+        width: 100vw;
+        height: 78vh;
+        .five_character{
+            margin-top: -100vh;
+            width: 40vw;
+            height: 70vh;
+            margin-left: 32vw;
+            background-image: url("../image/together.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .five_character:hover{
+            cursor: pointer;
+        }
+        .click_btn{
+            font-family: 'Bree Serif', serif;
+            position: absolute;
+            width: 16vw;
+            height: 8vh;
+            background-color: $b2;
+            color: $white;
+            font-size: 2vw;
+            top: 8%;
+            left: 63%;
+            line-height: 7vh;
+            text-align: center;
+            border: 8px solid $b1;
+            border-radius: 1vw;
+            -webkit-border-radius: 1vw;
+            -moz-border-radius: 1vw;
+            -ms-border-radius: 1vw;
+            -o-border-radius: 1vw;
+            display: none;
+            p{
+            animation: blank_time 1s infinite;
+            -webkit-animation: blank_time 1s infinite;
+            }
+            @keyframes blank_time {
+                from{opacity: 0;};
+                to{ opacity: 1;}
+            }
+
+        }
+        .click_btn:after, .click_btn:before {
+            top: 100%;
+            left: 20%;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        .click_btn:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-top-color: $b2;
+            border-width: 20px;
+            margin-left: -30px;
+        }
+        .click_btn:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-top-color: $b1;
+            border-width: 30px;
+            margin-left: -40px;
+        }
+    }
+}
+//두번쨰 페이지
+.second_page{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/riley/Riley_fear.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .riley_out{
+        padding-top: 2vw;
+        .riley_introduction{
+            position: relative;
+            width: 40vw;
+            height: 22vh;
+            font-size: 1.3vw;
+            margin: 0;
+            margin-left: 55vw;
+            border: 8px solid $joy;
+            border-radius: 1vw;
+            background-color: rgba(0,0,0,0.4);
+            color: $white;
+            -webkit-border-radius: 1vw;
+            -moz-border-radius: 1vw;
+            -ms-border-radius: 1vw;
+            -o-border-radius: 1vw;
+            .text_wrap{
+                margin-top: 2vh;
+                margin-left: 2vw;
+            }
+            span{
+                line-height: 3.5vh;
+            }
+            .blinker {
+                opacity: 1;
+                margin-bottom: -2px;
+                height: 1.1vw;
+                margin-left: 0px;
+                border-left: 0.4vw solid $joy;
+                animation: blinker 0.9s steps(2, start) infinite;
+                -webkit-animation: blinker 0.9s steps(2, start) infinite;
+            }
+            
+            @keyframes blinker {
+                to { 
+                visibility: hidden; 
+                }
+            }
+        }
+        .riley_introduction:after, .riley_introduction:before {
+            top: 100%;
+            left: 10%;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+        .riley_introduction:after {
+            border-color: rgba(136, 183, 213, 0);
+            border-top-color: $joy;
+            border-width: 30px;
+            margin-left: -50px;
+        }
+        .riley_introduction:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-top-color: $joy;
+            border-width: 30px;
+            margin-left: -50px;
+        }
+    }
+    .see_cutty{
+        width: 30vw;
+        margin-left: 63vw;
+        margin-top: 2vw;
+        display: inline-flex;
+        flex-direction: row;
+        font-size: 1.3vw;
+
+        color: $white;
+        .see_yes, .see_no{
+            display: inline-block;
+            float:left;
+            text-align: center;
+            width: 12vw;
+            height: 5vh;
+            line-height: 5vh;
+            border-radius: .5vw;
+            background-color: rgba(0,0,0,0.4);
+            color: $white;
+            border: 6px solid $joy;
+            -webkit-border-radius: .5vw;
+            -moz-border-radius: .5vw;
+            -ms-border-radius: .5vw;
+            -o-border-radius: .5vw;
+        }
+        .see_no{
+            margin-left: 2vw;
+        }
+        .see_yes, .see_no{
+            cursor: pointer;
+        }
+    }
+    .see_no_sub{
+        width: 25vw;
+        height: 14vw;
+        margin-left: 100vw;//원래 74vw;
+        margin-top: 2vw;
+        display: inline-flex;
+        flex-direction: row;
+        .out_sadness{
+            width: 11vw;
+            height: 14vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("../image/character/sadness3.png");
+        }
+        .ques_sad{
+            width: 13vw;
+            height: 8vw;
+            background-image: url("../image/ques_sad.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            p{
+                width: 6vw;
+                line-height: 8vw;
+                font-size: 1.3vw;
+                padding-left:1.2vw;
+                color: $sadness;
+            }
+        }
+    }
+}
+//세번째 페이지
+.third_page{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../image/riley/view_backsidetransparent.png");
+    display: flex;
+    flex-direction: column;
+    .first_half{
+        width: 100vw;
+        height: 40vh;
+        display: inline-flex;
+        flex-direction: row;
+        .disgust_riley, .joy_riley, .crying_riley, .fear_riley, .angry_riley{
+            background-image: url("../image/riley/riley_nomove/riley_disgust.png");
+            background-position: 40% 50%;
+            @include film_form;
+            .kodak_one{
+                background-image: url("../image/kodak.png");
+                @include film_form;
+                background-position: 17% 50%;
+            }
+        }
+        .joy_riley{
+            background-image: url("../image/riley/riley_nomove/riley_joy.png");
+            background-position: 50% 50%;
+        }
+        .crying_riley{
+            background-image: url("../image/riley/riley_nomove/riley_crying.png");
+            background-position: 50% 50%;
+        }
+        .fear_riley{
+            background-image: url("../image/riley/riley_nomove/riley_fear.png");
+        }
+        .angry_riley{
+            background-image: url("../image/riley/riley_nomove/riley_angry.png");
+            background-position: 0% 50%;
+        }
+        .disgust_riley:hover, .joy_riley:hover, .crying_riley:hover, .fear_riley:hover, .angry_riley:hover{
+            cursor: pointer;
+        }
+    }
+    .riley_speak{
+        position: absolute;
+        width: 13vw;
+        height: 31vh;
+        background-repeat: no-repeat;
+        top: 70vh;
+        left: 2vw;
+        background-image: url("../image/Riley_Anderson.png");
+        display: none;
+        div{
+            width: 26vw;
+            height: 39vh;
+            padding: 1vw;
+            background-image: url("../image/question_joy.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-left: 3vw;
+            margin-top: -16vw;
+            color: $white;
+            font-size: 1vw;
+            line-height: 4vh;
+            -webkit-border-radius: 0.5vw;
+            -moz-border-radius: 0.5vw;
+            -ms-border-radius: 0.5vw;
+            -o-border-radius: 0.5vw;
+            p{
+                width:14vw;
+                height: 39vh;
+                margin-left: 3.3vw;
+                margin-top: 7vh;
+                font-weight: 600;
+            }
+        }
+    }
+    .second_half{
+        width: 100vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .letter_trailer{
+        width: 15vw;
+        text-align: right;
+        font-size: 3vw;
+        font-family: $engfont;
+        font-weight: 800;
+        color: $white;
+        margin-top: 42vh;
+        padding-right: 1vw;
+    }
+    .see_trailer{
+        width: 45vw;
+        height: 50vh;
+        margin-top: 5vh;
+        padding-right: 3vw;
+    }
+}
+    .introduce_character{
+        position: absolute;
+        width: 60vw;
+        height: 50vh;
+        background-color: rgba(0,0,0,0.8);
+        // border: 10px solid $upset;
+        top: 70%;
+        left: 67%;
+        display: inline-flex;
+        flex-direction: row;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        display: none;
+    }
+    .display_character, .description_character{
+        width: 20vw;
+        height: 50vh;
+    }
+    .display_character{
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .description_character{
+        width: 40vw;
+        display: flex;
+        flex-direction: column;
+        div{
+            color: $white;
+            padding: 0.5vw;
+        }
+    }
+    .name_wrap{
+        font-size: 3vw;
+        width: 39vw;
+        height: 14vh;
+        line-height: 15vh;
+        font-weight: 800;
+        display: inline-flex;
+        flex-direction: row;
+        color: $upset;
+        .name_input{
+            width: 25vw;
+            padding-left: 0;
+        }
+        .view_video{
+            width: 14vw;
+            font-size: 1.3vw;
+        }
+        .view_video:hover{
+            cursor: pointer;
+        }
+    }
+    .word_input{
+        font-family: $engfont;
+        font-size: 1.4vw;
+        width: 37vw;
+        padding-right: 2vw;
+        height: 14vh;
+        line-height: 5vh;
+    }
+    .desc_input{
+        width: 37vw;
+        height: 49vh;
+        padding-right: 2vw;
+        font-size: 1vw;
+        line-height: 2vw;
+    }
+.go_to_video{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    .xi-close-min{
+        z-index: 4000;
+        position: absolute;
+        color: $white;
+        width: 3vw;
+        height: 3vh;
+        font-size: 2vw;
+        top: 18%;
+        left: 77%;
+    }
+    video{
+        z-index: 2000;
+        width: 60vw;
+        height: 80vh;
+        margin-left: 20vw;
+        margin-top: 10vh;
+    }
+    .xi-close-min:hover{
+        cursor: pointer;
+    }
+}

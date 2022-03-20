@@ -1,0 +1,241 @@
+html, body {
+  background-color: #f4f4f4;
+  width: 100vw;
+  word-spacing: 2px;
+  letter-spacing: 0px;
+  font-family: "Nanum Gothic", sans-serif;
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+  cursor: default;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.header_sec {
+  position: relative;
+  width: 100vw;
+  height: 5vh;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header_sec .logo_sec {
+  width: 20vw;
+  height: 10vh;
+  margin-top: 2vw;
+  margin-left: 2vw;
+  background-image: url("../image/logo/oliveyoung_bl.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.recruit_sec {
+  background-color: #fff;
+  width: 70vw;
+  height: 80vh;
+  margin: 0 auto;
+  margin-bottom: 8vh;
+  border: 0.1vw solid #010116ec;
+  border-radius: 1vw;
+  -webkit-border-radius: 1vw;
+  -moz-border-radius: 1vw;
+  -ms-border-radius: 1vw;
+  -o-border-radius: 1vw;
+}
+
+.recruit_sec h1 {
+  color: #010116ec;
+  font-size: 5.5vw;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 3vw;
+}
+
+.default_info {
+  width: 70vw;
+  height: 25vh;
+}
+
+.default_info .default_head {
+  font-size: 4.4vw;
+  font-weight: 400;
+  text-align: left;
+  padding: 1vw;
+  margin-left: 5vw;
+}
+
+.default_info hr {
+  width: 60vw;
+  margin: 0 auto;
+}
+
+.default_info form {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.default_info form .input_sec {
+  width: 55vw;
+  height: 5vw;
+}
+
+.default_info form .input_sec div {
+  text-align: left;
+  height: 5vw;
+  width: 16vw;
+  margin-top: 3vw;
+  font-size: 2vw;
+  display: inline-block;
+  float: left;
+  text-align: center;
+}
+
+.default_info form .input_sec input {
+  font-size: 0.8vw;
+  margin: 1vw;
+  width: 34vw;
+  height: 2vw;
+  display: inline-block;
+  float: left;
+  margin-top: 2.3vw;
+}
+
+.default_info form .input_sec input[type="date"] {
+  font-family: "Nanum Gothic", sans-serif;
+  color: #757575;
+}
+
+.default_info .self_intro {
+  text-align: center;
+  margin-top: 3vw;
+  width: 70vw;
+  height: 20vw;
+}
+
+.default_info .self_intro div {
+  padding-left: 5vw;
+  text-align: left;
+  font-size: 2vw;
+}
+
+.default_info .self_intro textarea {
+  width: 60vw;
+  margin-top: 1vw;
+  height: 10vw;
+}
+
+.second_sec {
+  height: 40vh;
+}
+
+.submit_sec {
+  width: 70vw;
+  height: 6vw;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.submit_sec div {
+  margin-left: 1.5vw;
+  text-align: center;
+  float: left;
+  width: 24vw;
+  height: 7vw;
+  font-size: 2vw;
+  line-height: 7vw;
+  background-color: #A4D223;
+  border: none;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.submit_sec div:hover {
+  cursor: pointer;
+}
+
+.submit_sec a {
+  color: #010116ec;
+}
+
+.submit_alert {
+  position: absolute;
+  width: 55vw;
+  height: 16vh;
+  top: 52%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f4f4f4;
+  border: 1px solid #010116ec;
+  border-radius: 1vw;
+  -webkit-border-radius: 1vw;
+  -moz-border-radius: 1vw;
+  -ms-border-radius: 1vw;
+  -o-border-radius: 1vw;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  display: none;
+}
+
+.submit_alert p {
+  text-align: center;
+  margin-top: 5vw;
+  line-height: 2vh;
+  font-size: 2vw;
+  width: 54vw;
+  height: 10vh;
+}
+
+.submit_alert .confirm_btn, .submit_alert .cancel_btn {
+  display: inline-block;
+  float: left;
+  font-size: 2vw;
+  text-align: center;
+  width: 11vw;
+  line-height: 3vh;
+  height: 3vh;
+  margin-top: -3vw;
+  border-radius: 0.5vw;
+  -webkit-border-radius: 0.5vw;
+  -moz-border-radius: 0.5vw;
+  -ms-border-radius: 0.5vw;
+  -o-border-radius: 0.5vw;
+}
+
+.submit_alert .confirm_btn {
+  margin-left: 15vw;
+  background-color: #A4D223;
+}
+
+.submit_alert .cancel_btn {
+  margin-left: 3vw;
+  background-color: #f2827f;
+}
+
+.submit_alert .confirm_btn:hover, .submit_alert .cancel_btn:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=recruit3.css.map */

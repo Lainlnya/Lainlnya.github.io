@@ -1,0 +1,381 @@
+@charset "utf-8";
+*{ margin: 0; padding:0; font-family: 'Black Han Sans', sans-serif;}
+html, body{
+    width: 1920px;
+    color: rgb(254, 254, 252);
+    background-color: #242424;
+    overflow-x:hidden;
+    cursor: default;
+}
+.view_error{
+    display: none;
+    position:absolute;
+    z-index: 700;
+    width: 500px;
+    text-align: center;
+    line-height: 98px;
+    height: 100px;
+    background-color: #5C9B42;
+    border-radius: 15px;
+    font-size: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.view_error:hover{
+    cursor:pointer;
+}
+.clear{
+    clear:both;
+}
+@mixin burger_set{
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+//로고부분
+.logo_sec{
+    z-index: 20;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -120px;
+    width: 2000px;
+    overflow: hidden;
+    height: 120px;
+    background-color: #5C9B42;
+    transform:rotate(170deg);
+    -webkit-transform:rotate(170deg);
+    -moz-transform:rotate(170deg);
+    -ms-transform:rotate(170deg);
+    -o-transform:rotate(170deg);
+}
+.burger_logo{
+    display:inline-block;
+    width: 1200px;
+    z-index: 30;
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    font-family: 'Monoton', cursive;
+    font-size: 60px;
+}
+//가격 소개
+.print_all{
+    display: inline-block;
+    float:left;
+    width: 60%;
+    height: 100%;
+    z-index: 100;
+    position: relative;
+}
+.click_burger{
+    z-index: 100;
+    display:inline-block;
+    float:left;
+    width: 50%;
+    height: 700px;
+    margin: 15% 3%;
+    //border: 3px solid rgb(254, 254, 252);
+}
+.receipt_area{
+    position: relative;
+    display: inline-block;
+    float:left;
+    width: 100%;
+    height: 53%;
+    border: 3px solid rgb(254, 254, 252);
+}
+.choose_burger{
+    position: absolute;
+    width:  100%;
+    height: 5%;
+    line-height: calc(700px * 0.08);
+    text-align:center;
+    font-size: 25px;
+}
+hr{
+    position: absolute;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+
+}
+.each_burger{
+    position: absolute;
+    width: 100%;
+    margin-top: 15%;
+    height: 80%;
+    text-align: center;
+    overflow: auto;
+    font-size:  18px;
+}
+.burger_totallist{
+    display: inline-block;
+    float:left;
+    width: 99%;
+    height: 13%;
+    margin-left: 1%;
+    overflow: hidden;
+    // z-index: 100;
+}
+.burger_minus:hover, .burger_plus:hover, .burger_delete:hover{
+    cursor: pointer;
+}
+.burger_item, .minus_wrap, .burger_num, .plus_wrap, .burger_price, .burger_delete{
+    display: inline-block;
+    float:left;
+    // z-index: 100;
+}
+.burger_item{
+    width: 40%;
+    text-align: center;
+}
+.minus_wrap, .plus_wrap, .delete_wrap{
+    width: 10%;
+    // z-index: 100;
+}
+.burger_price{
+    width: 30%;
+
+}
+
+.burger_minus, .burger_plus, .burger_delete{
+    width: 50%;
+    height: 50%;
+    border: 2px solid rgb(254, 254, 252);
+    background-color:#5C9B42 ;
+    color: rgb(254, 254, 252);
+    font-size: 17px;
+}
+.total_burger{
+    display: inline-block;
+    float:left;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    z-index: 100;
+    font-size: 27px;
+    margin-top: 10px;
+}
+.view_money{
+    width: 100%;
+    height: 25%;
+    margin-bottom: 10px;
+    border: 3px solid rgb(254, 254, 252);
+    line-height: 39px;
+}
+.total_view{
+    width:100%;
+    height: 69%;
+}
+.print_wrap, .money_wrap, .return_wrap{
+    display: inline-block;
+    float:left;
+    width: 33.33%;
+    height: 100%;
+    text-align: center;
+    font-size:25px;
+}
+
+//거스름돈 구간
+.return_exchange{
+    display: inline-block;
+    float:left;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    z-index: 100;
+    font-size: 27px;
+}
+.view_exchange{
+    width: 100%;
+    margin-bottom: 10px;
+    height: 5%;
+    font-size: 27px;
+    text-align: center;
+    border: 3px solid rgb(254, 254, 252);
+
+}
+.input_exchange{
+    text-align:center;
+}
+.money_list{
+    font-size: 25px;
+    width: 25%;
+    display: inline-block;
+    float:left;
+}
+
+
+//돈 선택 구간
+.click_money{
+    z-index: 100;
+    display:inline-block;
+    float:left;
+    width: 30%;
+    height: 700px;
+    margin: 15% 3%;
+    //border: 3px solid rgb(254, 254, 252);
+}
+.click_wrap{
+    width: 100%;
+    height: 80%;
+}
+.other_buttons{
+    width: 100%;
+    height: 20%;
+}
+.select_money{
+    width: 100%;
+    height: 8%;
+    font-size: 25px;
+    text-align: center;
+}
+.won_money{
+    display: inline-block;
+    float:left;
+    width: 48%;
+    height: 20%;
+    border: 2px solid rgb(254, 254, 252);
+    border-radius: 10px;
+    font-size: 25px;
+    color:#5C9B42;
+    line-height: calc(700px * 0.8 * 0.2 - 2px);
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.won_money:hover {
+    background-color: rgb(254, 254, 252);
+    cursor: pointer;
+}
+.return_button, .reset_button{
+    display: inline-block;
+    float:left;
+    width: 48%;
+    height: 98%;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid rgb(254, 254, 252);
+    border-radius: 10px;
+    line-height: calc(700px * 0.2 * 0.98 - 2px);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.return_button:hover, .reset_button:hover{
+    background-color: #5C9B42;
+    color: rgb(254, 254, 252);
+    cursor: pointer;
+}
+//버거메뉴소개
+.burger_menu{
+    display: inline-block;
+    float:left;
+    width: 40%;
+    height: 100%;
+}
+.menu_one, .menu_two, .menu_three{
+    width: 100%;
+    height: 250px;
+    margin-top: 15%;
+}
+.menu_one figure, .menu_two figure, .menu_three figure{
+    display: inline-block;
+    float:left;
+}
+.menu_two, .menu_three{
+    margin-top: 0;
+}
+.anna_burger{
+    background-image:url("./image/annaburger.png");
+    width: 150px;
+    height: 200px;
+    @include burger_set;
+}
+.chicken_burger{
+    background-image: url("./image/chicken.png");
+    width: 150px;
+    height: 200px;
+    @include burger_set;
+}
+.mac_burger{
+    background-image:url("./image/bigmac.png");
+    width: 150px;
+    height: 200px;
+    @include burger_set;
+}
+.double_burger{
+    background-image: url("./image/doublemeat.png");
+    @include burger_set;
+    width: 150px;
+    height:200px;
+}
+.potato_burger{
+    background-image: url("./image/potatoburger.png");
+    @include burger_set;
+    width: 150px;
+    height: 200px;
+}
+.vegan_burger{
+    background-image: url("./image/vegan.png");
+    @include burger_set;
+    width: 150px;
+    height: 200px;
+}
+.tomato_burger{
+    background-image: url("./image/tomatomeat.png");
+    @include burger_set;
+    width: 150px;
+    height: 200px;
+}
+.triple_burger{
+    background-image: url("./image/triplemeat.png");
+    @include burger_set;
+    width: 150px;
+    height: 200px;
+}
+.chicken_nuggets{
+    background-image: url("./image/chickennuggets.png");
+    @include burger_set;
+    width: 150px;
+    height: 200px;
+}
+.french_fries{
+    background-image: url("./image/frenchfries.png");
+    @include burger_set;
+    width: 150px;
+    height: 200px;
+}
+.vanilla_shake{
+    background-image: url("./image/vanillashake.png");
+    @include burger_set;
+    width: 150px;
+    height: 200px;
+}
+.hamburger_coke{
+    background-image: url("./image/coca_cola.png");
+    @include burger_set;
+    margin: 20px 0;
+    width: 150px;
+    height: 160px;
+}
+figcaption{
+    width: 150px;
+    height: 20px;
+    text-align: center;
+}
+.bg_choi:hover{
+    cursor: pointer;
+}

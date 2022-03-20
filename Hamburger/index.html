@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- logo한정폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <!-- 전체폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./image/favicon_hamburger.ico" type="image/x-icon"/>
+    
+    <script src="../../jquery/jquery-3.6.0.min.js"></script>
+    <script src="./burgershop.js"></script>
+    <link href="./burgershop.css" rel="stylesheet">
+    <title>ANNA's BURGER SHOP</title>
+  </head>
+  <body>
+    <section class="header_sec">
+      <div class="logo_sec"></div>
+      <div class="burger_logo">ANNA's BURGER SHOP </div>
+    </section>
+    <div class="clear"></div>
+    <section class="print_all">
+      <section class="click_burger"> 
+        <section class="receipt_area"> 
+          <div class="choose_burger">RECEIPT</div>
+          <hr>
+          <section class="each_burger"></section>
+        </section>
+        <section class="total_burger">
+          <div class="view_money" id="view_money">총 결제금액</div>
+          <div class="total_view"> 
+            <div class="money_wrap">TOTAL
+              <div class="money_area" id="money_area"></div>
+            </div>
+            <div class="print_wrap">MONEY
+              <div class="print_area" id="print_area"></div>
+            </div>
+            <div class="return_wrap">RETURN
+              <div class="return_area" id="return_area"> </div>
+            </div>
+          </div>
+        </section>
+        <section class="return_exchange"> 
+          <article> 
+            <div class="view_exchange">거스름돈</div>
+            <div class="input_exchange" id="input_exchange"></div>
+          </article>
+        </section>
+      </section>
+      <section class="click_money"> 
+        <section class="click_wrap"> 
+          <div class="select_money">금액 선택</div>
+          <div class="fmill_won won_money" id="fmill_won">₩50,000</div>
+          <div class="mill_won won_money" id="mill_won">₩10,000</div>
+          <div class="fthou_won won_money" id="fthou_won">₩5,000</div>
+          <div class="thou_won won_money" id="thou_won">₩1,000</div>
+          <div class="fbaek_won won_money" id="fbaek_won">₩500</div>
+          <div class="baek_won won_money" id="baek_won">₩100</div>
+          <div class="ften_won won_money" id="ften_won">₩50</div>
+          <div class="ten_won won_money" id="ten_won">₩10</div>
+        </section>
+        <section class="other_buttons"> 
+          <div class="return_button" id="return_button">계산</div>
+          <div class="reset_button" id="reset_button">리셋</div>
+        </section>
+      </section>
+    </section>
+    <section class="burger_menu"> 
+      <section class="menu_one"> 
+        <figure> 
+          <div class="anna_burger bg_choi" id="anna_burger"> </div>
+          <figcaption>ANNA BURGER 8,900원</figcaption>
+        </figure>
+        <figure>
+          <div class="chicken_burger bg_choi" id="chicken_burger"> </div>
+          <figcaption>CHICKEN BURGER 9,930원</figcaption>
+        </figure>
+        <figure>
+          <div class="mac_burger bg_choi" id="mac_burger"> </div>
+          <figcaption>MEGA BURGER 10,270원</figcaption>
+        </figure>
+        <figure>
+          <div class="double_burger bg_choi" id="double_burger"> </div>
+          <figcaption>DOUBLE MEAT 12,320원</figcaption>
+        </figure>
+      </section>
+      <section class="menu_two"> 
+        <figure>
+          <div class="potato_burger bg_choi" id="potato_burger"> </div>
+          <figcaption>POTATO BURGER 8,980원</figcaption>
+        </figure>
+        <figure>
+          <div class="vegan_burger bg_choi" id="vegan_burger"> </div>
+          <figcaption>VEGAN BURGER 10,460원</figcaption>
+        </figure>
+        <figure>
+          <div class="tomato_burger bg_choi" id="tomato_burger"> </div>
+          <figcaption>TOMATO BURGER 13,260원</figcaption>
+        </figure>
+        <figure>
+          <div class="triple_burger bg_choi" id="triple_burger"> </div>
+          <figcaption>TRIPLE BURGER 17,690원</figcaption>
+        </figure>
+      </section>
+      <section class="menu_three">
+        <figure>
+          <div class="chicken_nuggets bg_choi" id="chicken_nuggets"> </div>
+          <figcaption>CHICKEN NUGGET 10,260원</figcaption>
+        </figure>
+        <figure>
+          <div class="french_fries bg_choi" id="french_fries"> </div>
+          <figcaption>FRENCH FRIES 5,920원</figcaption>
+        </figure>
+        <figure>
+          <div class="vanilla_shake bg_choi" id="vanilla_shake"> </div>
+          <figcaption>VANILLA SHAKE 3,610원</figcaption>
+        </figure>
+        <figure>
+          <div class="hamburger_coke bg_choi" id="hamburger_coke"> </div>
+          <figcaption>DRINK COCA COLA 1,500원</figcaption>
+        </figure>
+      </section>
+    </section>
+    <div class="clear"></div>
+    <div class="view_error"></div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+        <meta charset="utf-8">
+        <title>제목</title>
+	<!--한글 구글 폰트 (Noto Sans KR)-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+	<!-- 여기까지 링크임-->
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/whole.css">
+	<link rel="stylesheet" href="../css/bottomBar.css">
+        <link rel="stylesheet" href="../css/float-btns.css">
+	</head>
+        <body>
+		<section id="wholeBox" class="wholeBox">
+                	<!-- header 파트 -->
+                	<header class="headerSection">
+                        	<div class="headerIcon1"></div>
+                        	<div class="headerIcon2"></div>
+                        	<section class="menuSection">
+                                	<button id="languageBtn" class="languageBtn">Language<i id="downIcon" class="xi-caret-down-min"></i>
+                                	</button>
+					<!-- 여기에 각자 영어 버전 한국어 버전 링크 걸어주세요.-->
+                                	<ul id="languageSelectList" class="languageSelectList">
+                                        	<li><a class="languageSelectBtn"href="#">한국어</a></li>
+                                        	<li><a class="languageSelectBtn"href="#">English</a></li>
+                                	</ul>
+                        	</section>
+                        	<i id="menuBar" class="xi-bars menuBar"></i>
+                	</header>
+			<!--Menu 파트-->
+			<section id="menuBox" class="menuBox">
+                        	<section id="menuTopSection" class="menuTopSection"></section>
+                        	<section id="menuBottomSection" class="menuBottomSection"></section>
+                        	<i id="menuBarExit" class="xi-close menuBarExit"></i>
+                	</section>
+			<section id="contentSection" class="contentSection">
+				<!-- 각 페이지 마다 다른 콘텐츠가 들어가야 하는 박스 --> 
+				<section class="pageTitleBox">
+					<!--각 페이지 제목 박스 -->
+					<!--여기에 각자 이전,다음 페이지 링크 걸고, 제목 변경해주세요.-->
+					<article class="prevBtnBox">
+						<a href="#" class="xi-angle-left prevBtn" ></a>
+						<a href="#" class="prevTitle">이전 페이지 이름</a>
+					</article>
+					<h1 class="pageTitleText">제목</h1>
+					<article class="nextBtnBox">
+						<a href="#" class="xi-angle-right nextBtn"></a>
+						<a href="#" class="nextTitle">다음 페이지 이름</a>
+					</article>
+				</section>
+
+				<!--페이지 바-->
+				 <section>
+			<article class="pageBox">
+				<article class="page1"> </article>
+				<article class="page2"> </article>
+				<article class="page3"> </article>
+				<article class="page4"> </article>
+				<article class="page5"> </article>
+				<article class="page6"> </article>
+				<article class="page7"> </article>
+				<article class="page8"> </article>
+			</article>
+			<!--하단 바 -->
+			<article class="bottomBar">
+			<p class="bottomText">HOME &#124; 개인정보처리 방침</p>
+			<span class="bottomText">재단법인 보령축제관광재단</span>
+			<span class="bottomText">축제사무국:충청남도 보령시 대해로 897-15</span>
+			<span class="bottomText">보령 머드 화장품 직영판매점: 0841-931-4021</span ><br>
+			<span class="bottomText">머드사업국:충청남도 보령시 주포면 관산공단길 14</span>
+			<span class="bottomText">관광안내소(대천역): 041-932-2023/041-930-0980</span>
+			<p class="textR">COPYRIGHT ©보령축제관광재단 ALL RIGHTS RESERVED.</p>
+			</article>
+		</section>
+
+				<!-- 이 아래에 작성하시면 됩니다.-->
+				<!-- 우측 삼각형, 원, top버튼입니다 -->
+		<div class="pageBox2">
+			<section class="floatBtns">
+				<li class="triBtn">
+					<!-- 시설안내 링크 넣어주세요! -->
+					<a class="triText" href="#">오시는길</a>
+				</li>
+				<li class="cirBtn">
+					<!-- 프로그램안내 링크 넣어주세요! -->
+					<a class="cirText" href="#">프로그램<br>안내</a>
+				</li>
+				<a class="ellipBtn" href="#wholeBox">TOP</a>
+			</section>
+		</div>
+			</section>
+
+
+
+		</section>
+
+		<script src="../js/header.js"></script>
+		<script src="../js/menu.js"></script>
+        </body>
+</html>
+
+

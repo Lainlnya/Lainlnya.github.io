@@ -1,0 +1,1011 @@
+@charset "utf-8";
+
+$main_bcolor: #000011ec;
+$main_gcolor: #A4D223;
+$main_ocolor: #f2827f;
+$eng_font : 'Kanit', sans-serif;
+$ko_font : 'Nanum Gothic', sans-serif;
+
+html,body{
+    width: 100%;
+    height: 100%;
+    word-spacing: 3px;
+    letter-spacing: -2px;
+    font-family: $ko_font;
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x:hidden;
+    cursor: default;
+}
+header{
+    width: 100%;
+    height: 12vh;
+}
+.logo_area{
+    position: fixed;
+    background-image: url("../image/logo/oliveyoung_bl.png");
+    width: 20vw;
+    height: 8vh;
+    padding-top: 4vh;
+    margin-left: 2vw;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 500;
+}
+header{
+    position: fixed;
+    z-index: 600;
+    background-color: rgba(252, 252,252, 0.9);
+    nav{
+        ul{
+            letter-spacing: 0px;
+            z-index: 600;
+            position: fixed;
+            margin-left: 65vw;
+            margin-top: 3vh;
+            width: 50vw;
+            height: 6vh;
+            font-family: $eng_font;
+            li{
+                text-align: center;
+                display: inline-block;
+                float:left;
+                padding: 0.5vh;
+                width: 10vw;
+                height: 4vh;
+                line-height: 5vh;
+                font-size: 1.6rem;
+            }
+            li a{
+                text-decoration: none;
+                color: $main_bcolor;
+            }
+        }
+    }
+}
+//main
+.main_sec{
+    width: 100vw;
+    height: 140vh;
+    position: relative;
+    .popo_ment{
+        z-index: 1000;
+        position: absolute;
+        color: $main_bcolor;
+        font-size: 1.5vw;
+        line-height: 3vw;
+        font-weight: 700;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+    .mainp_area{
+        video{
+        width: 100vw;
+        height: 120vh;
+        }
+    }
+    
+}
+.sub_sec1{
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    .sub1_desc{
+        text-align: left;
+        padding: 1vw;
+        font-size: 2.7vw;
+        color: $main_gcolor;
+        font-family: $eng_font;
+        font-weight: 300;
+        margin-top: 10vh;
+        margin-left: 2vw;
+        line-height: 3vw;
+    }
+    h3, p{
+        font-size: 1.3vw;
+        text-align: left;
+        padding: 1vw;
+        margin-left: 2vw;
+        padding-bottom: 1vw;
+    }
+    h3{
+        font-weight: 700;
+    }
+    p{
+        font-weight: 400;
+        line-height: 2vw;
+        padding-top: 0;
+        font-size: 1.2vw;
+        width: 35vw;
+    }
+    p strong{
+        font-weight: 700;
+    }
+}
+.sub1_picarea{
+    z-index: 200;
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    left: 40%;
+    width: 58vw;
+    height: 22vh;
+    .sub1_pic1{
+        display: inline-block;
+        float:left;
+        background-image: url("../image/mainpage/plag.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 18vw;
+        height: 11vw;
+        margin-right: 1vw;
+        
+    }
+    .plag_s, .plag_t, .plag_st{
+        position:absolute;
+        text-align: center;
+        width: 18vw;
+        height: 11vw;
+        font-size: 1.3vw;
+        color: #fff;
+        line-height: 11vw;
+        background-color: rgba(0,0,0,0.6);
+        display: none;
+    }
+    .sub1_pic2{
+        display: inline-block;
+        float:left;
+        background-image: url("../image/mainpage/town.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 18vw;
+        height: 11vw;
+        margin-right: 1vw;
+    }
+    .sub1_pic3{
+        display: inline-block;
+        float:left;
+        background-image: url("../image/mainpage/just.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 18vw;
+        height: 11vw;
+    }
+}
+.sub_sec2{
+    display: inline-block;
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    text-align: right;
+    .sub2_desc{
+        padding: 1vw;
+        font-size: 2.7vw;
+        color: $main_gcolor;
+        font-family: $eng_font;
+        font-weight: 300;
+        line-height: 3vw;
+        text-align: right;
+        width: 95vw;
+        margin: 10vh 2vw 2vw 0;
+    }
+    h3, p{
+        font-size: 1.3vw;
+        text-align: right;
+        padding: 1vw;
+        margin-right: 2vw;
+        padding-bottom: 1vw;
+        width: 95vw;
+        }
+    h3{
+        font-weight: 700;
+        margin:0;
+    }
+    p{
+        font-weight: 400;
+        line-height: 2vw;
+        padding-top: 0;
+        font-size: 1.2vw;
+        width: 42.2vw;
+        margin-left: 53vw;
+    }
+}
+.sub_sec2{
+    height: 60vh;
+    position: relative;
+    .sub2_picarea{
+        position: absolute;
+        width: 50vw;
+        height: 34vh;
+        top: 25%;
+        left: 3%;
+        display: inline-block;
+        .sub2_pic1{
+            display: inline-block;
+            float:left;
+            background-image: url("../image/mainpage/h&b_1.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 20vw;
+            height: 18vw;
+            margin-right: 1vw;
+        }
+        .sub2_pic2{
+            display: inline-block;
+            float:left;
+            background-image: url("../image/mainpage/h&b_2.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 20vw;
+            height: 18vw;
+        }
+    }
+}
+.sub_sec3{
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+    .sub3_desc{
+        height: 4vw;
+        text-align: left;
+        padding: 1vw;
+        font-size: 2.7vw;
+        color: $main_gcolor;
+        font-family: $eng_font;
+        font-weight: 300;
+        margin-top: 10vh;
+        margin-left: 2vw;
+        line-height: 3vw;
+    }
+    h3, p{
+        font-size: 1.3vw;
+        text-align: left;
+        padding: 1vw;
+        margin-left: 2vw;
+        padding-bottom: 1vw;
+    }
+    h3{
+        margin-top: 0;
+        font-weight: 700;
+    }
+    p{
+        font-weight: 400;
+        line-height: 2vw;
+        padding-top: 0;
+        font-size: 1.2vw;
+        width: 49vw;
+    }
+    .sub3_picarea{
+        position: absolute;
+        width: 50vw;
+        height: 34vh;
+        top: 35%;
+        left: 54%;
+        display: inline-block;
+        .sub3_pic1{
+            display: inline-block;
+            float:left;
+            background-image: url("../image/CJ/smart_store.jpg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 22vw;
+            height: 15vw;
+        }
+        .sub3_pic2{
+            display: inline-block;
+            float:left;
+            background-image: url("../image/CJ/channel_view3.jpg");
+            width: 22vw;
+            height: 15vw;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-left: 1vw;
+        }
+    }
+}
+.last_sec{
+    width: 100vw;
+    height: 80vh;
+    background-color: #F5F5F5;
+    .last_head{
+        padding-top: 3vw;
+        font-size: 2vw;
+        color: $main_bcolor;
+    }
+}
+.last_wsec{
+    width: 100vw;
+    height: 60vh;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    h1{
+        margin-left: 2vw;
+        font-size: 1.2rem;
+        color: #fff;
+    }
+    p{
+        padding-left: 1vw;
+        font-size: 1.3rem;
+        color: #fff;
+        line-height: 30px;        
+    }
+}
+.interview_1, .interview_2, .interview_3, .interview_4{
+    background-image: url("../image/mainpage/interview_1.jpg");
+    width: 15vw;
+    height:45vh;
+    margin: 1vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    .o_1{
+        width: 15vw;
+        height: 45vh;
+        background-color: rgba(0,0,0,0.4);
+        
+    }
+}
+.interview_2{
+
+    background-position: 50% 50%;
+    background-image: url("../image/mainpage/interview_2.jpg");
+}
+.interview_3{
+    background-image: url("../image/mainpage/interview_3.jpg");
+}
+.interview_4{
+    background-image: url("../image/mainpage/interview_4.jpg");
+}
+.o_1:hover{
+    background:linear-gradient($main_gcolor, $main_ocolor );
+}
+//menu1
+.story_start{
+    width: 100%;
+    margin-top: 20vh;
+    text-align: center;
+    height: 30vh;
+    background-color: $main_gcolor;
+    h1{
+        font-size: 11vh;
+        line-height:  18vh;
+        color:$main_bcolor;
+        font-family: $eng_font;
+    }
+    p{
+        margin-top: 2vh;
+        font-size: 3vh;
+        font-weight: 400;
+        color: #647644;
+    }
+}
+.story_part1{
+    width: 100vw;
+    height: 60vh;
+    text-align: center;
+    .part1_wrap{
+        width: 75vw;
+        margin: 0 auto;
+        .s_vision, .s_mission, .s_slogan{
+            display: inline-block;
+            float:left;
+            margin-top: 10vh;
+            width: 25vw;
+            height: 40vh;
+            .vision_circle, .mission_circle, .slogan_circle{
+                width: 180px;
+                height: 180px;
+                margin: 0 auto;
+                margin-bottom: 3vh;
+                padding: 25px;
+                background-color: #A2C767;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                .vision_innercircle, .mission_innercircle, .slogan_innercircle{
+                    width: 180px;
+                    height: 180px;
+                    font-family: $eng_font;
+                    color: $main_bcolor;
+                    font-size: 2.7rem;
+                    line-height: 180px;
+                    background-color: #Fff;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+            }
+            p{
+                
+                font-size: 2.1vh;
+                line-height: 3.4vh;
+                color: $main_bcolor;
+                font-weight: 700;
+            }
+        }
+    }
+}
+.story_part2{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/first_page/fly_olive2.png");
+    h1{
+        font-family: $eng_font;
+        color: #fcfcfc;
+        font-size: 2.5vw;
+        text-align: right;
+        padding-top: 4vh;
+        text-align: right;
+        padding-right: 4vw;
+    }
+    p{
+        color: #dddddd;
+        font-size: 2vh;
+        line-height: 3.2vh;
+        text-align: right;
+        padding-right: 4vw;
+        padding-top: 100vh;
+    }
+    .fly_olive{
+        position:absolute;
+        left: 44vw;
+        top: 45vh;
+        div{
+            display: inline-block;
+            float:left;
+            font-family: 'Black Han Sans', sans-serif;
+            color:rgb(252, 252,252);
+            font-size: 10vh;
+        }
+    }:nth-child(2){
+        margin-top: -1vh;
+    }:nth-child(3){
+        margin-top: -1.4vh;
+        margin-right: 1vw;
+    }:nth-child(4){
+        margin-top: -3vh;
+    }:nth-child(5){
+        margin-top: -3.5vh;
+    }:nth-child(6){
+        margin-top: -4vh;
+        margin-left: 0;
+    }
+}
+.story_part3{
+    width: 100vw;
+    height: 78vh;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #dddddd;
+    .part3_area, .part3_bidesc{
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        height: 78vh;
+        h1 {    
+            font-size: 5vh;
+            margin-top: 10vh;
+            text-align: center;
+            font-weight: 700 ;
+        }
+        .part3_logo{
+            background-image: url("../image/logo/oliveyoung_bl.png");
+            width: 34vw;
+            height: 15vh;
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin: 6vh auto;
+        }
+        .part3_palette{
+            width: 50vw;
+            display: inline-flex;
+            flex-direction: row;
+            .part3_colorg, .part3_colorc, .part3_colorb{
+                width: 6vw;
+                height: 10vh;
+                display: flex;
+                flex-direction: column;
+                .part3_color1, .part3_color2, .part3_color3{
+                    width: 2vw;
+                    height: 2vw;
+                    margin: 0 auto;
+                    background-color: $main_gcolor;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+                .part3_color2{
+                    background-color: $main_ocolor;
+                }
+                .part3_color3{
+                    background-color: $main_bcolor;
+                }
+                .color1_desc, .color2_desc, .color3_desc{
+                    padding-top: 0;
+                    margin-top: 0;
+                    width: 7vw;
+                    height: 2vh;
+                    text-align: center;
+                    font-size: 0.9vw;
+                }
+            }
+        }
+        .bidesc_1, .bidesc_2, .bidesc_3{
+            height: 20vh;
+            h1, p{
+                padding-left: 10vw;
+                text-align: left;
+                width: 50vw;
+                font-size: 3vw;
+            }
+            h1{
+                font-family: $eng_font;
+                color: $main_gcolor;
+            }
+            p{
+                font-size: 2.5vh;
+                padding-top: 1vh;
+                line-height: 4vh;
+            }
+        }
+    }
+
+}
+//menu2
+.history_wrap{
+    font-family: $ko_font;
+    width: 100vw;
+    height: 600vh;
+    display: inline-flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.history_main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/CJ/oliveyoung_top.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .history_logo{
+        margin-top: 35vh;
+        margin-left: 40vw;
+        width: 20vw;
+        height: 10vh;
+        background-size: contain;
+        background-image: url("../image/logo/oliveyoung_bl.png");
+        background-repeat: no-repeat;
+    }
+    h1{
+        color: $main_bcolor;
+        font-size: 5vh;
+        text-align: center;
+        margin-top: 5vh;
+        line-height: 8vh;
+        font-weight: 600;
+    }
+}
+.h_2019{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/CJ/today_dream.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    .green_line{
+        margin-left: -100vw;
+        width: 50vw;
+        height: 40vh;
+        background-color: rgba(164, 210, 36, 1);
+        h3{
+            margin-left: 2vw;
+            margin-top: 45vh;
+            font-size: 4vh;
+            line-height: 5.5vh;
+            font-weight: 800;
+            padding-top: 3vh;
+            color: $main_bcolor;
+        }
+        p{
+            margin-left: 2vw;
+            color: #101010;
+            font-size: 1.2vw;
+            line-height: 4vh;
+            margin-top: 3vh;
+            font-weight: 400;
+        }
+    }
+}
+.h_2016{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: 60% 50%;
+    background-repeat: no-repeat;
+    background-image: url("../image/CJ/volunteer.jpg");
+        h3{
+            font-size: 4vh;
+            font-weight: 800;
+            text-align:right;
+            margin-top: 70vh;
+            margin-right: -30vw;
+        }
+        p{
+            font-size: 2.5vh;
+            margin-top: 5vh;
+            text-align: right;
+            margin-right: -30vw;
+            line-height: 4vh;
+            font-weight: 400;
+        }
+    
+}
+.h_2012{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/CJ/shopping_pic.jpg");
+    .header_2012{
+        margin-left: 60vw;
+        margin-top: 100vh;
+        width: 40vw;
+        height: 20vh;
+        background-color: $main_ocolor;
+        h3{
+            font-size: 3.5vh;
+            color: #fff;
+            padding: 3vh;
+            font-weight: 600;
+        }
+        p{
+            padding-left: 3vh;
+            font-size: 1.2vw;
+            line-height: 4vh;
+            color: #fff;
+        }
+    }
+}
+.h_2007{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(232,242,218);
+    display: inline-flex;
+    flex-direction: row-reverse;
+    z-index: 200;
+    position: relative;
+    .h_2007pic{
+        background-image: url("../image/CJ/2002_olive.jpg");
+        width: 30vw;
+        height: 80vh;
+        margin-top: 10vh;
+        margin-right: 5vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+    .wrap_2007{
+        width: 60vw;
+        height: 100vh;
+    }
+    .header_2007{
+        font-size: 4.5vw;
+        color:  rgb(189, 197, 177);
+        text-align: left;
+        font-weight: 400;
+        margin-top: 20vh;
+        margin-left: 18vw;
+    }
+    .fifth_wrap{
+        display: inline-flex;
+        flex-direction: row;
+        margin-top: 60vh;
+        .fifth_first{
+            margin-left: 18vw;
+            width: 20vw;
+            display: flex;
+            flex-direction: column;
+            h1{
+                height: 10vh;
+                text-align: left;
+                font-size: 3.7vw;
+                color: $main_gcolor;
+                font-weight: 600;
+                padding-left:0;
+            }
+            h3{
+                height: 7vh;
+                font-size: 1.7vw;
+                color: $main_bcolor;
+                font-weight: 600;
+            }
+            p{
+                height: 20vh;
+                font-size: 1vw;
+                color: $main_bcolor;
+                font-weight: 400;
+                line-height: 2vw;
+            }
+        }
+        .fifth_second{
+            width: 40vw;
+            display: flex;
+            flex-direction: column;
+            h1{
+                height: 10vh;
+                text-align: left;
+                font-size: 3.7vw;
+                color: $main_gcolor;
+                font-weight: 600;
+                padding-left:0;
+            }
+            h3{
+                height: 7vh;
+                font-size: 1.7vw;
+                color: $main_bcolor;
+                font-weight: 600;
+            }
+            p{
+                height: 20vh;
+                font-size: 1vw;
+                color: $main_bcolor;
+                font-weight: 400;
+                line-height: 2vw;
+            }
+        }
+    }
+}
+.h_1999{
+    position: relative;
+    z-index: 500;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../image/CJ/olive_history.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    .last_p{
+        background-color: rgba(0,0,0,0.7);
+        width: 43vw;
+        height: 30vh;
+        padding: 3vh;
+        margin-right:-46vw;
+            h3 {
+                padding: 1vw;
+                font-size: 5vh;
+                color: $main_gcolor;
+                font-weight: 800;
+                padding-top: 5vh;
+                
+            }
+            p{
+                font-size: 1.2vw;
+                padding: 1.3vw;
+                padding-top: 3vh;
+                line-height: 5vh;
+                color: rgb(252, 252,252);
+            }
+    }
+}
+//menu3 시작
+.recruit_start{
+    width: 100vw;
+    height: 30vh;
+    div{
+        width: 100vw;
+        height: 20vh;
+        margin-top: 15vh;
+        // background-color: #F6F6C9; 
+        font-size: 6vh;
+        text-align: center;
+        line-height: 20vh;
+        font-weight: 600;
+    }
+}
+.recruit_process{
+    background-color: #f4f4f4;
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    .process_1, .process_2{
+        width: 100vw;
+        height: 30vh;
+        h1{
+            font-size: 1.5vw;
+            margin-left: 15vw;
+            margin-bottom: 5vh;
+            padding-top: 5vh;
+            
+        }
+        .one_wrap, .two_wrap{
+            width: 100vw;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            article{
+                width: 15vw;
+                div{
+                    font-weight: 600;
+                    text-align: center;
+                    padding: 1.6vh;
+                    font-size: 2.3vh;
+                }
+                .step_stage{
+                    font-size: 3vh;
+                    color:rgba(164, 210, 36, 1);
+                }
+            }
+            .enter_here{
+                width: 12vh;
+                height: 12vh;
+                line-height: 6vh;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                background-color: #f2827f;
+                .enter_olive{
+                    text-align: center;
+                    font-size: 3vh;
+                    color: #fff;
+                    padding: 3vh;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+.go_page{
+    width: 100vw;
+    height: 20vh;
+    padding: 6.5vh 0;
+    div{
+        width: 20vw;
+        height: 7vh;
+        background-color: #f2827f;
+        font-size: 3.5vh;
+        line-height: 7vh;
+        text-align: center;
+        border-radius: 1.5vh;
+        margin: 0 auto;
+        color: #fff;
+        margin-top: 3vw;
+    }
+    div a{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+.want_face{
+    width: 100vw;
+    height: 120vh;
+    .want_pic{
+        width: 100vw;
+        height: 40vh;
+        background-image: url("../image/first_page/fly_olive.png");
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @keyframes move_pic {
+        0%{ background-position: 0% 0%;}
+        50%{ background-position: 50% 50%;}
+        100%{ background-positiion: 100% 100%}
+    }
+    h1{
+        width: 100vw;
+        height: 10vh;
+        font-size: 6vh;
+        text-align: center;
+        line-height: 15vh;
+        font-weight: 600;
+    }
+    .want_sub{
+        width: 100vw;
+        height: 50vh;
+        margin-top: 10vh;
+        display: inline-flex;
+        flex-direction: row;
+        // align-items: center;
+            .circle_1, .circle_2, .circle_3, .circle_4{
+                width: 25vw;
+                .inner_circle1, .inner_circle2, .inner_circle3, .inner_circle4{
+                    width: 10vw;
+                    margin: 0 auto;
+                    height: 10vw;
+                    background-color: $main_gcolor;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    figure{
+                        margin: 0 auto;
+                        width: 10vw;
+                        height: 10vw;
+                        padding-top: 1.5vw;
+                        .inner1_pic, .inner2_pic, .inner3_pic, .inner4_pic{
+                            margin: 0 auto;
+                            width: 5vw;
+                            height: 5vw;
+                            background-image: url("../image/last_page/honesty.png");
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+                        .inner2_pic{
+                            background-image: url("../image/last_page/respect.png");
+                        }
+                        .inner3_pic{
+                            background-image: url("../image/last_page/lightbulb.png");
+                        }
+                        .inner4_pic{
+                            background-image: url("../image/last_page/creativity.png");
+                        }
+                        .inner1_desc, .inner2_desc, .inner3_desc, .inner4_desc{
+                            margin: 2vh auto;
+                            font-size: 1.4vw;
+                            text-align: center;
+                            width: 5vw;
+                            height: 2vh;
+                            line-height: 2vh;
+                        }
+                    }
+                }
+                .inner_circle2, .inner_circle4{
+                    background-color: $main_ocolor;
+                }
+                figcaption{
+                    font-size: 2vh;
+                    text-align: center;
+                    line-height: 4vh;
+                    margin-top: 5vh;
+                }
+            }
+    }
+}
+
+//footer영역
+footer{
+    display: inline-flex;
+    width: 100vw;
+    height: 25vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .footer_logo{
+        background-image: url("../image/logo/oliveyoung_bl.png");
+        width: 20vw;
+        height: 10vh;
+        margin-left: 35vw;
+        background-size:contain;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+    p {
+    margin-left: 2vw;
+    font-size: 2vh;
+    line-height: 2.5vh;
+    vertical-align: center;
+    }
+    p a{
+        text-decoration: none;
+        color: $main_bcolor;
+    }
+
+}

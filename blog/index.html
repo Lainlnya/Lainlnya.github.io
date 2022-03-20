@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <!-- 메인 한정 폰트 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap" rel="stylesheet">
+        <!-- 퍼센트 폰트 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+        <!-- 한글폰트 -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+        <!-- 제이쿼리로드 -->
+        <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <link sizes="16x16" href="image/main/anna.png">
+        <!-- <script src="portfolio/blog/main.js"></script> -->
+        <script src="./main.js"></script>
+
+
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <!-- <link href="portfolio/blog/css/reset.css" rel="stylesheet">
+        <link href="portfolio/blog/css/main.css" rel="stylesheet"> -->
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <title>Welcome! Anna's Blog</title>
+    </head>
+    <body>
+        <section class="all_wrap_sec">
+            <section class="first_sec" id="first_sec">
+                <section class="header_sec">
+                    <a href="#first_sec"><div class="anna_logo"></div></a>
+                    <nav>
+                        <ul>
+                            <a href="#second_sec" class="let_s"><li class="let_s">LET'S<div class="nav_sticker" id="nav1"></div></li></a>
+                            <a href="#third_sec" class="dive_in"><li class="dive_in">DIVE IN<div class="nav_sticker" id="nav2"></div></li></a>
+                            <a href="#fourth_sec" class="about_skills"><li class="about_skills">TO SKILLS<div class="nav_sticker" id="nav3"></div></li></a>
+                            <a href="#fifth_sec" class="about_portfolio"><li class="about_portfolio">PORTFOLIO<div class="nav_sticker" id="nav4"></div></li></a>
+                            <a href="#sixth_sec" class="about_experience"><li class="about_experience">EXPERIENCE<div class="nav_sticker" id="nav5"></div></li></a>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="main_sec">
+                    <div class="main_first">Hello,</div>
+                    <div class="main_second">I'm</div>
+                    <section class='main_third'>
+                        <div class="scroll_ev1">Yerim</div>
+                        <div class="scroll_ev2">Attractive</div>
+                        <div class="scroll_ev3">Sociable</div>
+                        <div class="scroll_ev4">Positive</div>
+                    </section>
+                    <section>
+                        <div class="ball_one"></div>
+                        <div class="ball_two"></div>
+                        <div class="ball_three"></div>
+                        <div class="ball_four"></div>
+                        <div class="ball_five"></div>
+                        <div class="my_pic"></div>
+                        <section class="introduce_me">
+                            <p>안녕하세요.</p>
+                            <p>'어제보다 더 나아가기 위해 노력하는'</p>
+                            <p>김예림입니다.</p>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="second_sec" id="second_sec">
+                <section class="aboutme_page">
+                    <div class="a_circle"></div>
+                    <div class="ab_circle"></div>
+                    <div class="about_pic"></div>
+                </section>
+                <section class="brief_desc">
+                    <section class="b_one">
+                        <p class="b_onep">PART 1</p>
+                        <div class="part_one"></div>
+                    </section>
+                    <section class="b_two">
+                        <section class="profile_first">
+                            <h1>EDUCATION</h1>
+                        </section>
+                        <section class="profile_first_p">
+                            <p>2016.02</p><span>창원명지여자고등학교 졸업</span>
+                            <p>2021.02</p><span>경희대학교 관광학과 졸업</span>
+                            <p>2021.12</p><span>라인컴퓨터아트학원 수료</span>
+                        </section>
+                        <section class="profile_second">
+                            <h1>LICENSE</h1>
+                        </section>
+                        <section class="profile_second_p">
+                            <p>2020.02</p><span>OPIC IH</span>
+                            <p>2020.05</p><span>컴퓨터활용능력 1급</span>
+                            <p>2020.06</p><span>TOEIC 880</span>
+                            <p>2021.01</p><span>웹디자인기능사</span>
+                        </section>
+                        <section class="profile_third">
+                            <h1>PROFILE</h1>
+                        </section>
+                        <section class="profile_third_p">
+                            <p>NAME</p><span>김예림</span>
+                            <p>BIRTH</p><span>1997.12.23</span>
+                            <p>ADDRESS</p><span>서울특별시 강북구 미아동</span>
+                            <p>EMAIL</p><span>yr1297@khu.ac.kr</span>
+                            <p>PHONE</p><span>010-3434-6978</span>
+                        </section>
+                        <div class="middle_circle"></div>
+                        <div class="abc_circle"></div>
+                    </section>
+                </section>
+                <!-- <div class="send_message">문자보내기</div> -->
+                <section class="message_layer"> 
+                    <section class="captcha_area">
+                        <p class="cap_guide">Enter the number below.</p>
+                        <div class="canvas_wrap">
+                            <canvas id="my_canvas" class="my_canvas"></canvas>
+                            <input id="value_capt" class="value_capt" type="text" autocomplete="off">
+                            <button class="check_capt" id ="check_capt">CHECK</button>
+                        </div>
+                    </section>
+                    <section class="message_area">
+                        <div class="put_text">문의 내용을 입력해주세요.</div>
+                        <section class="total_wrap">
+                            <section class="text_wrap">
+                                이름<br><br><br>
+                                번호<br><br><br>
+                                문의 내용
+                                <div><br>(<span id="nowByte">0</span>/80<br>bytes)</div>
+                            </section>
+                            <form class="form_wrap" id="frm_textarea" action ="portfolio/blog/text.php" method="post">
+                                <input name="question_person" class="question_person"type="text" placeholder="김예림">
+                                <input name="question_number" id="question_number" class="question_number"type="text" placeholder="01034346978">
+                                <textarea class="question_text"rows="10" cols="19" name="textArea_byte_limit" id="number_check" placeholder="안녕하세요. 김예림입니다."></textarea>
+                                <button class="send_btn" type="submit">SEND</button>
+                            </form>
+                        </section>
+                    </section>
+                </section>
+                <a href="#third_sec"><div class="scroll_down"><div>SCROLL DOWN</div></div></a>
+            </section>
+            <section class="third_sec" id="third_sec">
+                <section class="third_sechalf">
+                    <div class="third_question"></div>
+                    <div class="third_tell">Possibility</div>
+                    <section class="third_vhalf"></section>
+                    <section class="third_vcontents">
+                        <section class="possi_1">
+                            <h1>언제나 맡은 일을 끝까지 해내는 책임감</h1>
+                            <div class="possw_1"><div class="possg_1"></div></div>
+                            <div class="possc_1">책임감</div>
+                        </section>
+                        <section class="possi_2">
+                            <h1>새로운 것에 도전하는 것을 즐기는 도전정신</h1>
+                            <div class="possw_2"><div class="possg_2"></div></div>
+                            <div class="possc_2">도전정신</div>
+                        </section>
+                        <section class="possi_3">
+                            <h1>같은 말이라도 다르게 긍정적으로 표현하는 커뮤니케이션 능력</h1>
+                            <div class="possw_3"><div class="possg_3"></div></div>
+                            <div class="possc_3">의사소통</div>
+                        </section>
+                        <section class="possi_4">
+                            <h1>당면한 문제에 대한 철저한 분석 및 문제 해결</h1>
+                            <div class="possw_4"></span><div class="possg_4"></div></div>
+                            <div class="possc_4">문제해결</div>
+                        </section>
+                        <section class="possi_5">
+                            <h1>타인의 감정을 잘 헤아릴줄 아는 공감능력</h1>
+                            <div class="possw_5"><div class="possg_5"></div></div>
+                            <div class="possc_5">공감 능력</div>
+                        </section>
+                    </section>
+                </section>
+                <section class="third_img">
+                </section>
+            </section>
+            <section class="fourth_sec" id="fourth_sec">
+                <section class="graph_pic"><div class="graph_pics"></div></section>
+                <section class="graph_wrap">
+                    <section class="skill_pic">
+                        <div class="s_frontend"></div>
+                        <div class="s_backend"></div>
+                        <div class="s_microsoft"></div>
+                        <div class="s_async"></div>
+                    </section>
+                    <section class="view_skills">
+                        <div class="hover_me">HOVER ME</div>
+                        <section class="v_wrap">
+                            <figure class="v_html">
+                                <img src="image/logo/skills_html.png" alt="html">
+                                <figcaption>95%</figcaption>
+                            </figure>
+                            <figure class="v_sass">
+                                <img src="image/logo/skills_sa.png" alt="sass">
+                                <figcaption>97%</figcaption>
+                            </figure>
+                            <figure class="v_js">
+                                <img src="image/logo/skills_js.png" alt="js">
+                                <figcaption>89%</figcaption>
+                            </figure>
+                            <figure class="v_jquery">
+                                <img src="image/logo/skills_jq.png" alt="jquery">
+                                <figcaption>89%</figcaption>
+                            </figure>
+                            <figure class="v_react">
+                                <img src="image/logo/skills_re.png" alt="react">
+                                <figcaption>70%</figcaption>
+                            </figure>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="fifth_sec" id="fifth_sec">
+                <section class="portfolio_area">
+                        <article class="portfolio_each">
+                            <div class="p_circle1"></div>
+                            <div class="p_contents">Matrix Calculator</div>
+                            <h1> - HTML SCSS JAVASCRIPT</h1>
+                            <div class="p_img"></div>
+                        </article>
+                        <article class="portfolio_each">
+                            <div class="p_circle2"></div>
+                            <div class="p_contents one_line">Burger Shop</div>
+                            <h1> - HTML SCSS JAVASCRIPT</h1>
+                            <div class="p_img"></div>
+                        </article>
+                        <article class="portfolio_each">
+                            <div class="p_circle3"></div>
+                            <div class="p_contents">Starbucks Kiosk</div>
+                            <h1> - HTML SCSS JAVASCRIPT PHP AJAX</h1>
+                            <div class="p_img"></div>
+                        </article>
+                        <article class="portfolio_each">
+                            <div class="p_circle4"></div>
+                            <div class="p_contents one_line">Olive young</div>
+                            <h1> - HTML SCSS JAVASCRIPT PHP</h1>
+                            <div class="p_img"></div>
+                        </article>
+                        <article class="portfolio_each">
+                            <div class="p_circle5"></div>
+                            <div class="p_contents one_line">Inside Out</div>
+                            <h1> - HTML SASS JAVASCRIPT</h1>
+                            <div class="p_img"></div>
+                        </article>
+                        <article class="portfolio_each">
+                            <div class="p_circle6"></div>
+                            <div class="p_contents one_line">Mud Festival</div>
+                            <h1> - HTML SASS JAVASCRIPT</h1>
+                            <div class="p_img"></div>
+                        </article>
+                        <article class="portfolio_each">
+                            <div class="p_circle7"></div>
+                            <div class="p_contents one_line">Photoshop</div>
+                            <h1> - PHOTOSHOP</h1>
+                            <div class="p_img"></div>
+                        </article>
+                        <article class="portfolio_each">
+                            <div class="p_circle8"></div>
+                            <div class="p_contents one_line">Infographic</div>
+                            <h1> - ILLUSTRATOR</h1>
+                            <div class="p_img"></div>
+                        </article>
+                        <section class="view_preview">
+                        </section>
+                </section>
+            </section>
+            <section class="sixth_sec" id="sixth_sec">
+                <section class="sixth_wrap">
+                    <section class="experience_page1">
+                        <i class="xi-angle-left left_btn"></i>
+                        <i class="xi-angle-right right_btn"></i>
+                        <div class="page1_abroad">Going Abroad</div>
+                        <div class="page1_desc">여행지를 돌아다니며 다양한 경험을 쌓다.</div>
+                        <p class="page1_img_desc">
+                            평소 해외여행하는 것을 좋아해 다양한 지역을<br>
+                            돌아다니며, 많은 문화를 경험하고 즐기는 편입니다.<br><br>
+                            새로운 것을 받아들이고, 다양성을 인정하는 것에 <br> 견문을 넓히게 되었습니다.
+                        </p>
+                        <section>
+                            <div class="page1_pic1"></div>
+                            <div class="page1_pic2"></div>
+                            <div class="page1_pic3"></div>
+                        </section>
+                    </section>
+                    <section class="experience_page2">
+                        <i class="xi-angle-left left_btn"></i>
+                        <i class="xi-angle-right right_btn"></i>
+                        <div class="page2_abroad">Working Job in USA</div>
+                        <div class="page2_desc">해외에서 일하며 낯선 환경에서 적응하다.</div>
+                        <p class="page2_img_desc">
+                            미국에서 인턴으로 약 6개월 동안 일하게 되었습니다. <br><br>
+                            낯선 환경에서 혼자 집을 구하고 미국에서 적응하며, 혼자 서는 힘을 많이 배우게 되었습니다.
+                            <br>앞으로 어떤 환경에서든 적응하여 이겨낼 수 있을 것 같은 자신감이 생겼습니다.
+                        </p>
+                        <section>
+                            <div class="page2_pic1"></div>
+                            <div class="page2_pic2"></div>
+                            <div class="page2_pic3"></div>
+                        </section>
+                    </section>
+                    <section class="experience_page3">
+                        <i class="xi-angle-left left_btn"></i>
+                        <i class="xi-angle-right right_btn"></i>
+                        <div class="page3_festival">Making Festival</div>
+                        <div class="page3_desc">문화기획동아리에 참여해 직접 축제를 만들다.</div>
+                        <p class="page3_img_desc">
+                            문화기획동아리를 통해 직접 축제를 기획하고 제작하는 기회를 가졌습니다.<br><br>
+                            그 중에서도 대외협력실 소속으로 기업과 컨택해 후원 및 협찬을 이끌어냈으며,
+                            SNS와 축제 참가자들을 대상으로 협찬 물품에 대한 홍보 활동 또한 성공적이었습니다.<br><br>
+                            축제 뿐만 아니라 행사를 기획하는 절차와 방법에 대해 몸소 깨닫게 되었습니다.
+                        </p>
+                        <section>
+                            <div class="page3_pic1"></div>
+                            <div class="page3_pic2"></div>
+                            <div class="page3_pic3"></div>
+                        </section>
+                    </section>
+                    <section class="experience_page4">
+                        <i class="xi-angle-left left_btn"></i>
+                        <i class="xi-angle-right right_btn"></i>
+                        <div class="page4_time">Having Part-time Job</div>
+                        <div class="page4_desc">많은 아르바이트 경험을 통해 세상을 만나다.</div>
+                        <p class="page4_img_desc">
+                            식당, 영화관, 호텔 등 다양한 서비스직 아르바이트를 통해
+                            고객을 응대하며 순발력을 기를 수 있었습니다. <br> 또한 고객의 입장에서 배려하고 생각하며
+                            똑같은 말이라도 긍정적으로 말하는 방법을 배울 수 있었습니다.<br><br>
+                            이를 바탕으로 영화관에서 근무할 당시 본사 서비스 평가에서 1위로, 전국 1등을 차지할 수 있었습니다.
+                        </p>
+                        <section>
+                            <div class="page4_pic1"></div>
+                            <div class="page4_pic2"></div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>

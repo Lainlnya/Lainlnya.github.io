@@ -1,0 +1,104 @@
+*{margin:0; padding:0;}
+.backgroundSetting{
+        width: 1200px;
+        height: 1180px;
+        display: inline-block;
+        position: relative;
+        background: {
+                color: #fbf6b1;
+                image: url("../image/background_transparent.png");
+                position: 50% 100%;
+                size: initial;
+                repeat: no-repeat;
+        }
+}
+.backgroundPicture{
+        width: 1200px;
+        height: 1180px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        opacity: 0.6;
+}
+.notiTitle {
+        position: relative;
+        margin-top: 100px;
+        margin-left: 60px;
+        font-size: 30px;
+        font-weight: 600;
+}
+.notiDate {
+        position: absolute;
+        top: 80px;
+        font-size: 20px;
+}
+.visit {
+        left: 250px;
+}
+.notiSection {
+        position: absolute;
+        top: 160px;
+        width: 1080px;
+        height: 835px;
+        background-color: #fbf6b1;
+}
+.notiSub{
+        position: absolute;
+        top: 50px;
+        left: 48%;
+        margin-left: -300px;
+        display: inline-block;
+        font-size: 24px;
+}
+.Down {
+        top: 120px;
+        font-size: 18px;
+        position: absolute;
+        margin-left: -130px;
+}
+.programImage{
+        width: 505px;
+        height: 620px;
+        background: {
+                image:url("../image/programen.png");
+                repeat: no-repeat;
+                size: cover;
+                position: 50% 50%;
+        }
+        display: inline-block;
+        position: absolute;
+        top: 180px;
+        left: 50%;
+        margin-left: -270px;
+}
+.muffyCharacter{
+        width: 240px;
+        height: 265px;
+        background: {
+                image:url("../image/머피머티장난.png");
+                repeat: no-repeat;
+                size: contain;
+                position: 50% 50%;
+        }
+        display: inline-block;
+        position: absolute;
+        top: 500px;
+        left: 10px;
+
+}
+.mudiCharacter{
+        width: 287px;
+        height: 175px;
+        background: {
+                image:url("../image/머피머티미끄럼틀.png");
+                repeat: no-repeat;
+                size: contain;
+                position: 50% 50%;
+        }
+        display: inline-block;
+        position: absolute;
+        top: 160px;
+        left: 780px;
+}
+

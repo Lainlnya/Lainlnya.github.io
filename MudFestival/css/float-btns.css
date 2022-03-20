@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.pageBox2 {
+  width: 1200px;
+  position: relative;
+  left: 50%;
+  margin-left: -600px;
+  display: block;
+  overflow: hidden;
+  z-index: 6000;
+}
+
+.floatBtns {
+  margin-left: 105%;
+}
+
+.triBtn {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  list-style: none;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 7px -8px gray;
+          box-shadow: 0px 10px 7px -8px gray;
+  cursor: pointer;
+  top: 300px;
+  width: 0;
+  height: 0;
+  border-width: 0px 50px 86.6px 50px;
+  border-style: solid;
+  border-color: transparent transparent #d80051 transparent;
+}
+
+.triText, .triTextEng, .cirText, .cirTextEng {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: -50px;
+  line-height: 20px;
+  position: fixed;
+  top: 345px;
+  cursor: pointer;
+}
+
+.triTextEng {
+  top: 344px;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.cirText, .cirTextEng {
+  height: 50px;
+  line-height: 20px;
+  font-size: 16px;
+  top: 480px;
+}
+
+.cirTextEng {
+  top: 490px;
+}
+
+.cirBtn {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  list-style: none;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 7px -8px gray;
+          box-shadow: 0px 10px 7px -8px gray;
+  cursor: pointer;
+  top: 450px;
+  background-color: #f89504;
+  border-radius: 50%;
+}
+
+.ellipBtn {
+  height: 100px;
+  width: 100px;
+  position: fixed;
+  list-style: none;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 7px -8px gray;
+          box-shadow: 0px 10px 7px -8px gray;
+  cursor: pointer;
+  height: 50px;
+  top: 100%;
+  margin-top: -150px;
+  background-color: #036fb8;
+  border-radius: 25px;
+  line-height: 48px;
+  text-decoration: none;
+}
+
+.triText:link, .triTextEng:link, .cirText:link, .cirTextEng:link {
+  color: black;
+}
+
+.triText:visited, .triTextEng:visited, .cirText:visited, .cirTextEng:visited {
+  color: black;
+}
+
+.triText:active, .triTextEng:active, .cirText:active, .cirTextEng:active {
+  color: black;
+}
+
+.ellipBtn:link {
+  color: black;
+}
+
+.ellipBtn:visited {
+  color: black;
+}
+
+.ellipBtn:active {
+  color: black;
+}
+/*# sourceMappingURL=float-btns.css.map */

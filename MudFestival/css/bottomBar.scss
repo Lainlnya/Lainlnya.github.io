@@ -1,0 +1,137 @@
+@mixin colorBox {
+        width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	border: 1px;
+	background-color:#dcdcdc;
+	float:left;
+	margin:5px;
+        transition: background-color 0.4s;
+        
+}
+
+*{ margin: 0px; padding: 0px;  }
+.jjangBox {
+	width:1200px;
+	height: 90px;
+}
+
+.pageBox {
+	width: 400px;
+	height: 30px;
+	margin-left: 500px;
+        position: relative;
+        margin-top: -30px;
+
+}
+.page1 {
+        @include colorBox;
+
+}
+.page1:hover {
+        background-color:rgb(245, 151, 151);
+}
+.page1:active {
+        background-color: #f4004d;
+}
+.page2 {
+        @include colorBox;
+}
+.page2:hover {
+        background-color:rgb(245, 151, 151);
+}
+.page2:active {
+        background-color: #f4004d;
+}
+.page3 {
+        @include colorBox;
+}
+.page3:hover {
+        background-color:rgb(245, 151, 151);
+}
+.page3:active {
+        background-color: #f4004d;
+}
+.page4 {
+        @include colorBox;
+}
+.page4:hover {
+        background-color:rgb(245, 151, 151);
+}
+.page4:active {
+        background-color: #f4004d;
+}
+.page5 {
+        @include colorBox;
+}
+.page5:hover {
+        background-color:rgb(245, 151, 151);
+}
+.page5:active {
+        background-color: #f4004d;
+}
+.page6 {
+        @include colorBox;
+}
+.page6:hover {
+        background-color:rgb(245, 151, 151);
+}
+.page6:active {
+        background-color: #f4004d;
+}
+.page7 {
+        @include colorBox;
+}
+.page7:hover {
+        background-color:rgb(245, 151, 151);
+}
+.page7:active {
+        background-color: #f4004d;
+}
+.page8 {
+        @include colorBox;
+}
+.page8:hover {
+        background-color:rgb(245, 151, 151);
+}
+.page8:active {
+        background-color: #f4004d;
+}
+.scBox {
+        background-color: #f4004d;
+}
+.scBox:hover {
+        background-color: #f4004d;
+}
+.scBox:active {
+        background-color: #f4004d;
+}
+
+
+.bottomBar {
+           width: 1200px;
+           height: 80px;
+	   float:left;
+	   margin-top:10px;
+}
+.bottomhome {
+        font-size: 15px;
+
+}
+a:link {
+        color:#333333;
+}
+a:visited {
+        color:#333333;
+}
+a { text-decoration:none } 
+
+.bottomText {
+        font-size:12px;
+}
+.textR {
+	font-size:12px;
+	text-align:right;
+	float:right;
+        
+}

@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+        <meta charset="utf-8">
+        <!--파비콘-->
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="../image/favicon.ico" type="image/x-icon"/>
+
+        <title>공지사항</title>
+ 		<!--한글 구글 폰트 (Noto Sans KR)-->
+	 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap" rel="stylesheet">
+		<!--여기까지 링크임-->
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/whole.css">
+		<link rel="stylesheet" href="../css/bottomBar.css">
+        <link rel="stylesheet" href="../css/float-btns.css">
+        <link rel="stylesheet" href="../css/notification.css">
+
+
+	</head>
+        <body>
+		<section id="wholeBox" class="wholeBox">
+                	<!-- header 파트 -->
+			<header class="headerSection">
+				<a class="logoSection" href="./mainpage.html"></a>
+                        	<div class="headerIcon1"></div>
+                        	<div class="headerIcon2"></div>
+                        	<section class="menuSection">
+                                	<button id="languageBtn" class="languageBtn">Language<i id="downIcon" class="xi-caret-down-min"></i>
+                                	</button>
+					<!-- 여기에 각자 영어 버전 한국어 버전 링크 걸어주세요.-->
+                                	<ul id="languageSelectList" class="languageSelectList">
+                                        	<li><a class="languageSelectBtn"href="#">한국어</a></li>
+                                        	<li><a class="languageSelectBtn"href="./notificationEn_7.html">English</a></li>
+                                	</ul>
+                        	</section>
+                        	<i id="menuBar" class="xi-bars menuBar"></i>
+                	</header>
+			<!--Menu 파트-->
+			<section id="menuBox" class="menuBox">
+                        	<section id="menuTopSection" class="menuTopSection"></section>
+                        	<section id="menuBottomSection" class="menuBottomSection"></section>
+                        	<i id="menuBarExit" class="xi-close menuBarExit"></i>
+                	</section>
+			<section id="contentSection" class="contentSection">
+				<!-- 각 페이지 마다 다른 콘텐츠가 들어가야 하는 박스 --> 
+				<section class="pageTitleBox">
+					<!--각 페이지 제목 박스 -->
+					<!--여기에 각자 이전,다음 페이지 링크 걸고, 제목 변경해주세요.-->
+					<article class="prevBtnBox">
+						<a href="./fee_6.html" class="xi-angle-left prevBtn" ></a>
+						<a href="./fee_6.html" class="prevTitle">입장료 안내</a>
+					</article>
+					<h1 class="pageTitleText">공지사항</h1>
+					<article class="nextBtnBox">
+						<a href="./FAQ_8.html" class="xi-angle-right nextBtn"></a>
+						<a href="./FAQ_8.html" class="nextTitle">자주묻는 질문</a>
+					</article>
+				</section>
+			<!-- 공지사항 표 -->
+			<div class="backImg"></div>
+			<div class="opacityPaper"></div>
+			<div class="noticeBox">
+				<!-- 공지사항 표 마스코트 -->
+				<img class="noticeImg" src="../image/muttycaution.png" alt="공지사항 표 마스코트">
+				<div class="notificationTable">
+					<table>
+						<tr>
+							<th class="trFirst">번호</th>
+							<th class="trSecond middleLiner">작성일자</th>
+							<th class="trThird middleLiner">제목</th>
+							<th class="trFourth">조회수</th>
+						</tr>
+						<tr>
+							<td class="cellNumber">1</td>
+							<td class="middleLiner secondText">2021-07-01<br>목</td>
+							<td class="middleLiner cellText">
+								<a id="textLink1" href="./notificationSub_9.html">제 24회 보령머드축제 세부프로그램일정 발표 안내</a>
+							</td>
+							<td id="viewsNumber1"class="cellNumber">3523</td>
+						</tr>
+						<tr>
+							<td class="cellNumber">2</td>
+							<td class="middleLiner secondText"></td>
+							<td class="middleLiner cellText">
+								<a id="textLink2" href="#"></a>
+							</td>
+							<td id="viewsNumber2"class="cellNumber">0</td>
+						</tr>
+						<tr>
+							<td class="cellNumber">3</td>
+							<td class="middleLiner secondText"></td>
+							<td class="middleLiner cellText">
+								<a id="textLink3" href="#"></a>
+							</td>
+							<td id="viewsNumber3"class="cellNumber">0</td>
+						</tr>
+						<tr>
+							<td class="cellNumber">4</td>
+							<td class="middleLiner secondText"></td>
+							<td class="middleLiner cellText">
+								<a id="textLink4" href="#"></a>
+							</td>
+							<td id="viewsNumber4"class="cellNumber">0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		
+				<!-- 우측 삼각형, 원, top버튼입니다 -->
+				<div class="pageBox2">
+					<section class="floatBtns">
+						<li class="triBtn">
+							<!-- 시설안내 링크 넣어주세요! -->
+							<a id="triText" class="triText"></a>
+						</li>
+						<li class="cirBtn">
+							<!-- 프로그램안내 링크 넣어주세요! -->
+							<a id="cirText" class="cirText"></a>
+						</li>
+						<a id="ellipBtn" class="ellipBtn"></a>
+					</section>
+				</div>
+				<!-- 이 아래에 작성하시면 됩니다.-->
+			</section>
+					<!--페이지 바-->
+		<section class="jjangBox">
+			<article class="pageBox">
+				<a href="./mudIntro_1.html" class="page1"></a>
+				<a href="./program_2.html" class="page2"></a>
+				<a href="./Accom_3.html" class="page3"></a>
+				<a href="./Faci_4.html" class="page4"></a>
+				<a href="./Tour_5.html" class="page5"></a>
+				<a href="./fee_6.html" class="page6"></a>
+				<a href="./notification_7.html" class="page7 scBox"></a>
+				<a href="./FAQ_8.html" class="page8"></a>
+			</article>
+			<!--하단 바 -->
+			<article class="bottomBar">
+			<p class="bottomhome"><a href="mainpage.html">HOME</a></p>
+			<span class="bottomText">재단법인 보령축제관광재단 &#124; </span>
+			<span class="bottomText">축제사무국: 충청남도 보령시 대해로 897-15 &#124;</span>
+			<span class="bottomText">보령 머드 화장품 직영판매점: 0841-931-4021</span ><br>
+			<span class="bottomText">머드사업국: 충청남도 보령시 주포면 관산공단길 14 &#124;</span>
+			<span class="bottomText">관광안내소(대천역): 041-932-2023 / 041-930-0980</span>
+			<span class="textR">COPYRIGHT ©보령축제관광재단 ALL RIGHTS RESERVED.</span>
+			</article>
+		</section>
+
+
+
+		</section>
+
+		<script src="../js/header.js"></script>
+		<script src="../js/menu.js"></script>
+		<script src="../js/notification.js"></script>
+		<script src="../js/floatBtns.js"></script>
+        </body>
+</html>
+
+

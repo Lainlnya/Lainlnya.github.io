@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wholeBox {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.headerSection {
+  width: 1200px;
+  height: 130px;
+  position: fixed;
+  z-index: 7000;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-image: url("../image/colorBar.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.headerSection .logoSection {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  background-color: transparent;
+  top: 10%;
+  left: 3%;
+  background-image: url("../image/mudLogo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.headerSection .headerIcon1 {
+  width: 155px;
+  height: 130px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 20%;
+  background-image: url("../image/character_img1.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.headerSection .headerIcon2 {
+  width: 155px;
+  height: 130px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 70%;
+  background-image: url("../image/character_img2.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.headerSection .menuSection {
+  position: fixed;
+  top: 0;
+  right: 10%;
+  z-index: 3000;
+}
+
+.headerSection .menuSection .languageBtn {
+  width: 100px;
+  height: 30px;
+  border: 0px;
+  border-radius: 0px 0px 5px 5px;
+  background-color: white;
+  color: #2f2f2f;
+  font-weight: bold;
+  text-align: center;
+  line-height: 28px;
+  cursor: pointer;
+  position: relative;
+}
+
+.headerSection .menuSection .languageSelectList {
+  width: 100px;
+  padding-left: 0px;
+  height: 0;
+  overflow: hidden;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #f0932b;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  list-style-type: none;
+}
+
+.headerSection .menuSection .languageSelectList .languageSelectBtn {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.headerSection .menuSection .languageSelectList .languageSelectBtn:hover {
+  color: #f1c40f;
+}
+
+.headerSection .menuBar {
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  position: fixed;
+  top: 65px;
+  right: 5%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  z-index: 9999;
+}
+
+.headerSection .menuBar:hover {
+  color: dodgerblue;
+}
+
+.headerSection .menuBarExit {
+  display: none;
+  color: red;
+}
+
+.headerSection .menuBarExit:hover {
+  color: black;
+}
+
+.contentSection {
+  width: 1200px;
+  margin-top: 130px;
+}
+
+.contentSection .pageTitleBox {
+  width: 1200px;
+  height: 149px;
+  border-bottom: 1px solid lightgray;
+  background-color: #fbf6b1;
+  position: relative;
+  z-index: 500;
+}
+
+.contentSection .pageTitleBox .prevBtnBox {
+  width: 64px;
+  height: 64px;
+  float: left;
+  margin-left: 70px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.contentSection .pageTitleBox .prevBtnBox .prevBtn {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  line-height: 63px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #f4004d;
+  -webkit-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
+
+.contentSection .pageTitleBox .prevBtnBox .prevBtn:hover {
+  background-color: #f49e1b;
+}
+
+.contentSection .pageTitleBox .prevBtnBox .prevTitle {
+  display: inline-block;
+  width: 95px;
+  position: absolute;
+  top: 74px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+  -webkit-transition: color 0.5s linear;
+  transition: color 0.5s linear;
+}
+
+.contentSection .pageTitleBox .prevBtnBox .prevTitle:hover {
+  color: white;
+}
+
+.contentSection .pageTitleBox .nextBtnBox {
+  width: 64px;
+  height: 64px;
+  float: right;
+  margin-right: 70px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.contentSection .pageTitleBox .nextBtnBox .nextBtn {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  line-height: 63px;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #f49e1b;
+  -webkit-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
+
+.contentSection .pageTitleBox .nextBtnBox .nextBtn:hover {
+  background-color: #f4004d;
+}
+
+.contentSection .pageTitleBox .nextBtnBox .nextTitle {
+  display: inline-block;
+  width: 95px;
+  position: absolute;
+  top: 74px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+  -webkit-transition: color 0.5s linear;
+  transition: color 0.5s linear;
+}
+
+.contentSection .pageTitleBox .nextBtnBox .nextTitle:hover {
+  color: white;
+}
+
+.contentSection .pageTitleBox .pageTitleText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #333333;
+}
+/*# sourceMappingURL=header.css.map */
