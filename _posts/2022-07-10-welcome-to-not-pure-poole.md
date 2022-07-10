@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Welcome to Not Pure Poole
-date: 2022-07-10 17:00
-type: categories
+date:
+  - 2022-07-10 17:00
+categories:
+  - data structure
 tags:
   - data structure
 toc: true
