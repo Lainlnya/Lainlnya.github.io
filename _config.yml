@@ -1,7 +1,7 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
+title: Live you love
+description: Study log
+url: https://Lainlnya.github.io
 avatar: /avatar.jpeg
 paginate: 5
 permalink: pretty
@@ -38,7 +38,7 @@ social:
     - https://twitter.com/vszhub
     - https://github.com/vszhub
 google_site_verification: xxxxx
-lang: en
+lang: ko
 
 sass:
   sass_dir: _sass
@@ -54,6 +54,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: Lainlnya
+  url: https://github.com/Lainlnya/
+  email: kimyelim100@gmail.com
