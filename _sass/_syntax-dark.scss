@@ -2,9 +2,14 @@
  * rougify style gruvbox.dark
  */
 
-.highlight table td { padding: 5px; }
-.highlight table pre { margin: 0; }
-.highlight, .highlight .w {
+.highlight table td {
+  padding: 5px;
+}
+.highlight table pre {
+  margin: 0;
+}
+.highlight,
+.highlight .w {
   color: #fbf1c7;
   background-color: #282828;
 }
@@ -13,7 +18,13 @@
   background-color: #282828;
   font-weight: bold;
 }
-.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+.highlight .c,
+.highlight .ch,
+.highlight .cd,
+.highlight .cm,
+.highlight .cpf,
+.highlight .c1,
+.highlight .cs {
   color: #928374;
   font-style: italic;
 }
@@ -23,10 +34,12 @@
 .highlight .nt {
   color: #fb4934;
 }
-.highlight .o, .highlight .ow {
+.highlight .o,
+.highlight .ow {
   color: #fbf1c7;
 }
-.highlight .p, .highlight .pi {
+.highlight .p,
+.highlight .pi {
   color: #fbf1c7;
 }
 .highlight .gi {
@@ -41,7 +54,11 @@
   color: #b8bb26;
   font-weight: bold;
 }
-.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+.highlight .k,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kv {
   color: #fb4934;
 }
 .highlight .kc {
@@ -53,7 +70,16 @@
 .highlight .kd {
   color: #fe8019;
 }
-.highlight .s, .highlight .sa, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+.highlight .s,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s2,
+.highlight .sh,
+.highlight .sx,
+.highlight .s1 {
   color: #b8bb26;
   font-style: italic;
 }
@@ -80,7 +106,14 @@
 .highlight .na {
   color: #b8bb26;
 }
-.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .il,
+.highlight .mo,
+.highlight .mx {
   color: #d3869b;
 }
 .highlight .ss {

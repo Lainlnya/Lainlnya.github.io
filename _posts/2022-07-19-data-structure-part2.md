@@ -1,13 +1,14 @@
 ---
-    layout: post
+  layout: post
 title: [Data Structure]재귀함수
+author: Lainlnya
 date:
   - 2022-07-19 23:00
 categories:
   - Data Structure
 tags:
-  - C
-  - Data Structure
+- C
+- Data Structure
 toc: true
 ---
 
@@ -18,11 +19,11 @@ toc: true
 함수 내에서 자기 자신을 다시 호출하는 함수
 
 ```C
-void Recursive(void)
-{
-	printf("Recursive call!\n");
-	Recursive();
-}
+  void Recursive(void)
+  {
+    printf("Recursive call!\n");
+    Recursive();
+  }
 ```
 
 즉, Recursive 함수를 실행하는 중간에 다시 Recursive 함수가 호출되면, Recursive 함수의 복사본을 하나 더 만들어서 복사본을 실행하게 되는 구조

@@ -10,7 +10,7 @@
 >
 > -- <a href="https://www.bbc.co.uk/bitesize/guides/zbtjnrd/revision/6"><cite>The death of Jekyll</cite></a>
 
------
+---
 
 See Not Pure Poole in action with [the demo site](https://vszhub.github.io/not-pure-poole/).
 
@@ -60,25 +60,25 @@ You can choose one of the following methods to install Not Pure Poole:
 
 - Directly specify the `not-pure-poole` gem.
 
-    1. Add `gem 'not-pure-poole'` into your `Gemfile`.
-    2. Add the below lines into your `_config.yml`.
+  1. Add `gem 'not-pure-poole'` into your `Gemfile`.
+  2. Add the below lines into your `_config.yml`.
 
-        ```yml
-        plugins:
-          - not-pure-poole
-        ```
+     ```yml
+     plugins:
+       - not-pure-poole
+     ```
 
 - If your site is hosted on GitHub Pages, you can use [`jekyll-remote-theme`](https://github.com/benbalter/jekyll-remote-theme) to import the master branch of Not Pure Poole.
 
-    1. Add `gem 'jekyll-remote-theme'` into your `Gemfile`.
-    2. Add the below lines into your `_config.yml`.
+  1. Add `gem 'jekyll-remote-theme'` into your `Gemfile`.
+  2. Add the below lines into your `_config.yml`.
 
-        ```yml
-        plugins:
-          - jekyll-remote-theme
+     ```yml
+     plugins:
+       - jekyll-remote-theme
 
-        remote_theme: vszhub/not-pure-poole
-        ```
+     remote_theme: vszhub/not-pure-poole
+     ```
 
 ## Usage
 
@@ -100,7 +100,7 @@ For example, below we've created the beginnings of a blue theme:
 
 ```scss
 // Example blue theme
-[data-theme="blue"] {
+[data-theme='blue'] {
   --body-bg: var(--blue);
   --body-color: #fff;
 }
