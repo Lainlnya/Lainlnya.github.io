@@ -2,12 +2,13 @@
 layout: post
 title: Welcome to Not Pure Poole
 date:
-  - 2022-07-10 17:00
-categories:
-  - data structure
+
+- 2022-07-10 17:00
+categories: Data-structure
 tags:
-  - data structure
+- Data structure
 toc: true
+
 ---
 
 Welcome to **Not Pure Poole**! This is an example post to show the layout.

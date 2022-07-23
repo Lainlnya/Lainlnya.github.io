@@ -37,8 +37,9 @@
   --text-font: Times, 'Times New Roman', 'Free Serif', 'Noto Serif',
     TimesNewRomanPSMT, 'Droid Serif';
 
-  --link-color: var(--blue);
+  --link-color: var(--gray-700);
   --link-hover-color: #1c7ed6;
+  --link-hover-head-color: var(--gray-600);
 
   --heading-color: var(--gray-900);
 
@@ -55,7 +56,7 @@
   --spacer-3: calc(var(--spacer) * 3);
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --body-color: var(--gray-300);
     --body-bg: var(--gray-800);

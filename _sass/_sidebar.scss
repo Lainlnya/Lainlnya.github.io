@@ -30,7 +30,6 @@
 
   a:hover,
   a:focus {
-    color: var(--link-hover-color);
   }
 }
 
@@ -58,12 +57,11 @@
   color: inherit;
   letter-spacing: 0.05em;
   font-size: 90%;
-  border-bottom: 2px solid;
   border-color: inherit;
 
   &:hover,
   &:focus {
-    color: var(--link-hover-color);
+
   }
 }
 
