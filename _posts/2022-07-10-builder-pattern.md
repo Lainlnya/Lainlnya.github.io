@@ -9,6 +9,7 @@ tags:
   - C
   - Data Structure
 toc: true
+hidden: true
 ---
 
 ## 자료구조란?

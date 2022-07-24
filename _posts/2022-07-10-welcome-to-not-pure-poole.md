@@ -8,7 +8,7 @@ categories: Data-structure
 tags:
 - Data structure
 toc: true
-
+hidden: true
 ---
 
 Welcome to **Not Pure Poole**! This is an example post to show the layout.
