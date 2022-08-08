@@ -6,6 +6,7 @@ avatar: /avatar.jpeg
 paginate: 5
 permalink: pretty
 cover_image: /bg.jpeg
+future: true
 
 # Gems
 plugins:
