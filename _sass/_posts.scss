@@ -17,6 +17,16 @@
     font-family: var(--body-font);
   }
 
+  h2 {
+    border-left: 5px solid #9E2D24;
+    padding-left: 10px;
+  }
+
+  h3 {
+    border-left: 4px solid #E3954D;
+    padding-left: 8px;
+  }
+
   li + li {
     margin-top: .25rem;
   }
@@ -30,11 +40,12 @@
 .page-title,
 .post-title {
   margin-top: 0;
+  border-left: none;
 }
 .post-title a {
   color: inherit;
   text-decoration: none;
-
+  
   &:hover,
   &:focus {
     text-decoration: underline;
